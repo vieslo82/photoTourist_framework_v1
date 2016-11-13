@@ -822,7 +822,7 @@ function validate_user() {
                 $("#poblacion").focus().after("<span class='error1'>" + xhr.responseJSON.error.poblacion + "</span>");
 
             if (xhr.responseJSON.success1) {
-                if (xhr.responseJSON.img_avatar !== "/php/photoTourist_framework_v1/media/default-avatar.png") {
+                if (xhr.responseJSON.img_avatar !== "/photoTourist_framework_v1/media/default-avatar.png") {
                     //$("#progress").show();
                     //$("#bar").width('100%');
                     //$("#percent").html('100%');

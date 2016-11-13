@@ -1,12 +1,12 @@
 <?php
     //SITE_ROOT
 	//$path=$_SERVER['DOCUMENT_ROOT'].'/25C framework_v3/';
-	$path=$_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/';
+	$path=$_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/';
     define('SITE_ROOT', $path);
 
     //SITE_PATH
     //define('SITE_PATH','https://'.$_SERVER['HTTP_HOST'].'/25C framework_v3/');
-		define('SITE_PATH','https://'.$_SERVER['HTTP_HOST'].'/php/photoTourist_framework_v1/');
+		define('SITE_PATH','https://'.$_SERVER['HTTP_HOST'].'/photoTourist_framework_v1/');
 
 	//CSS
 	define('CSS_PATH', SITE_PATH . 'view/css/');

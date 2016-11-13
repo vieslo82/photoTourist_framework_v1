@@ -49,6 +49,6 @@
 
           $result = response_code(http_response_code());
             $arrData = $result;
-            require_once $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/view/inc/templates_error/'.'error'.'.php';
+            require_once $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/view/inc/templates_error/'.'error'.'.php';
         }
     }

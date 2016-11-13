@@ -1,10 +1,10 @@
 <?php
     session_start();
-    include $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/modules/users/utils/functions_users.inc.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/utils/upload.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/utils/common.inc.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/paths.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/model/Conf.class.singleton.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/modules/users/utils/functions_users.inc.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/utils/upload.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/utils/common.inc.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/paths.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/model/Conf.class.singleton.php';
 
     //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     if ((isset($_GET['upload'])) && ($_GET['upload'] == true)) {
@@ -54,7 +54,7 @@
             //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
             //Preparamos los datos para hacer insertarlos en la Base de Datos
             $arrValue = false;
-            $path_model = $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/modules/users/model/model/';
+            $path_model = $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/modules/users/model/model/';
             $arrValue = loadModel($path_model, 'user_model', 'create_user', $arrArgument);
             //echo json_encode($arrValue);
             //die();
@@ -151,7 +151,7 @@
         $json = array();
         $url = 'http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso/ListOfCountryNamesByName/JSON';
 
-        $path_model = $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/modules/users/model/model/';
+        $path_model = $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/modules/users/model/model/';
 
         $json = loadModel($path_model, 'user_model', 'obtain_paises', $url);
         /*if($json){
@@ -183,7 +183,7 @@ if ((isset($_GET['load_provincias'])) && ($_GET['load_provincias'] == true)) {
     $jsondata = array();
     $json = array();
 
-    $path_model = $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/modules/users/model/model/';
+    $path_model = $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/modules/users/model/model/';
 
     $json = loadModel($path_model, 'user_model', 'obtain_provincias');
 
@@ -203,7 +203,7 @@ if (isset($_POST['idPoblac'])) {
     $jsondata = array();
     $json = array();
 
-    $path_model = $_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/modules/users/model/model/';
+    $path_model = $_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/modules/users/model/model/';
     $json = loadModel($path_model, 'user_model', 'obtain_poblaciones', $_POST['idPoblac']);
 
     if ($json) {

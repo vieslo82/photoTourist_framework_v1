@@ -80,7 +80,7 @@ class userDAO
     {
         $json = array();
         $tmp = array();
-        $provincias = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/resources/provinciasypoblaciones.xml');
+        $provincias = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/resources/provinciasypoblaciones.xml');
         $result = $provincias->xpath('/lista/provincia/nombre | /lista/provincia/@id');
         for ($i = 0; $i < count($result); $i += 2) {
             $e = $i + 1;
@@ -101,7 +101,7 @@ class userDAO
         $tmp = array();
 
         $filter = (string) $arrArgument;
-        $xml = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/php/photoTourist_framework_v1/resources/provinciasypoblaciones.xml');
+        $xml = simplexml_load_file($_SERVER['DOCUMENT_ROOT'].'/photoTourist_framework_v1/resources/provinciasypoblaciones.xml');
         $result = $xml->xpath("/lista/provincia[@id='$filter']/localidades");
 
         for ($i = 0; $i < count($result[0]); ++$i) {
